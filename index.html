@@ -28,9 +28,6 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
         <link rel="apple-touch-icon" href="assets/img/Logo.png">
-
-        <!-- Spline Preview Script -->
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.52/build/spline-viewer.js"></script>
     </head>
     <body>
         <header>
@@ -85,10 +82,7 @@
         <div class="ess-body-container">
             <div class="ess-hero">
                 <h1 class="ess-content-left">Management<br>Redefined.</h1>
-                <spline-viewer style="width:425px;height:500px;border-radius:100px;" url="https://prod.spline.design/3JaXn93PNYngpb3I/scene.splinecode"></spline-viewer>
             </div>
         </div>
-    <script>document.querySelectorAll('.invisible').forEach(element => {element.remove();});</script> <!-- Script to remove anything with ".invisible" class -->
-    <script>document.addEventListener("DOMContentLoaded", () => {const splineViewer = document.querySelector("spline-viewer"); if (splineViewer) {const checkLogo = setInterval(() => {const logo = splineViewer.shadowRoot?.querySelector("#logo"); if (logo) {logo.remove(); clearInterval(checkLogo);}}, 500);}});</script>
     </body>
 </html>
