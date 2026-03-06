@@ -1,80 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eastall Software Systems - Management Redefined.</title>
-        <!-- Meta Tags -->
-        <meta name="description" content="Server Hosting, Server Management Software, Business/Company Management Software, and heaps more! At Eastall Software Systems, it's about our family❤️">
-        <meta name="keywords" content="Eastall, Eastall Software, Eastall Systems, Eastall Software Systems, Servers, Server Hosting, Servers Hosting, Kaedyn Eastall, Management, Business Management, Management Panel, Manager, Server Manager, Server Management, Server Host">
-        <meta name="author" content="Eastall Software Systems / Kaedyn Eastall">
-        <link rel="canonical" href="https://eastallsoftware.com">
-        <meta property="og:title" content="Eastall Software Systems - Management Redefined.">
-        <meta property="og:description" content="Server Hosting, Server Management Software, Business/Company Management Software, and heaps more! At Eastall Software Systems, it's about our family❤️">
-        <meta property="og:image" content="https://eastallsoftware.com/assets/img/Logo.png">
-        <meta property="og:url" content="https://eastallsoftware.com">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Home - Eastall Software Systems">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Eastall Software Systems - Management Redefined.">
-        <meta name="twitter:description" content="Server Hosting, Server Management Software, Business/Company Management Software, and heaps more! At Eastall Software Systems, it's about our family❤️">
-        <meta name="twitter:image" content="https://eastallsoftware.com/assets/img/Logo.png">
-        <meta name="twitter:site" content="@EastallSoftware">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <link rel="apple-touch-icon" href="https://eastallsoftware.com/assets/img/Logo.png">
-    
-        <link rel="icon" href="https://eastallsoftware.com/assets/img/Logo.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .logo img {
-            max-width: 150px;
-        }
-        h1 {
-            font-size: 28px;
-            font-weight: 600;
-            margin: 20px 0;
-        }
-        p {
-            font-size: 16px;
-            margin: 10px 0;
-            color: #555;
-        }
-        a {
-            color: #7d5fff;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <img src="https://eastallsoftware.com/assets/img/ESS-Banne.png" alt="ESS Banner">
+<?php
+$title = "Eastall Software Systems | Server Management Redefined.";
+include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php';
+?>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Server Management <span class="highlight">Redefined.</span></h1>
+            <p>Server hosting and management software refined to help accelerate your business growth. Built by businesses for businesses, we understand what your server needs are and this makes administration a breeze.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='https\://eastallss.com/services/'">Get Started</button>
+                <button class="btn btn-secondary" onclick="window.location.href='https\://eastallss.com/documentation'">Learn More</button>
+            </div>
         </div>
-        <h1>This Domain Is Offline!</h1>
-        <p>Kia Ora! This domain is currently offline for development. Please visit us at <a href="https://discord.com/invite/7z2JfnByay">discord.com</a> to learn more.</p>
+        <div class="scroll-indicator" onclick="document.querySelector('.content').scrollIntoView({behavior: 'smooth'})">
+            <span class="material-symbols-outlined mouse-icon">mouse</span>
+            <div class="arrows">
+                <span class="material-symbols-outlined">expand_more</span>
+                <span class="material-symbols-outlined">expand_more</span>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+
+    <div class="content">
+        <h1>Check Out The Services We Offer!</h1>
+        <div class="services-grid">
+            <div class="service-card" onclick="window.location.href='https\://eastallss.com/services/cloud'">
+                <img class="service-icon" src="assets/img/misc/cloud.png" alt="eCloud Logo">
+                <h3>eCloud VPS Hosting</h3>
+                <p>We offer some powerful VPS hosting services through our eCloud Service! Offering unmatched uptime, performance, and scalability. We strive to ensure you're up as much as possible.</p>
+                <div class="service-price">Starting at: <strong>$6.99/mo</strong></div>
+            </div>
+            <div class="service-card" onclick="window.location.href='https\://eastallss.com/services/panel'">
+                <img class="service-icon" src="assets/img/misc/panel.png" alt="ePanel Logo">
+                <h3>ePanel VPS Control Panel</h3>
+                <p>Discover our intuitive ePanel server management solution, offering comprehensive control, easy automation, powerful customization, and seamless integration to simplify your hosting operations.</p>
+                <div class="service-price">Starting at: <strong>$0/mo</strong></div>
+            </div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" onclick="window.location.href='https\://eastallss.com/services/api'">
+                <img class="service-icon" src="assets/img/misc/api.png" alt="eAPI Logo">
+                <h3>eAPI oAuth System</h3>
+                <p>We at Eastall Software Systems have experimented. After experimenting, we've mastered the best authentication method ever! With fast response times, a creative engineering team behind every login, and major CSS customizability, the eAPI system can be made just for you.</p>
+                <div class="service-price">Starting at: <strong>$0/mo</strong></div>
+            </div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" onclick="window.location.href='https\://discord.com/invite/7z2JfnByay'">
+                <div class="service-icon">🛠️</div>
+                <div class="support-content">
+                    <h3>Free 24/7 Support</h3>
+                    <p>Enjoy peace of mind with our 24/7 Support, offering around-the-clock assistance from expert technicians to ensure your services run smoothly and efficiently at all times in our Discord server.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/footer.php'; ?>
